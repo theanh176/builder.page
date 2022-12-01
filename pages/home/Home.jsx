@@ -6,6 +6,8 @@ import gjsPresetsWebpage from "grapesjs-preset-webpage";
 import gjsBlocksBasic from "grapesjs-blocks-basic";
 import gjsCountdown from "grapesjs-component-countdown";
 import gjsForms from "grapesjs-plugin-forms";
+import gjsTooltip from "grapesjs-tooltip";
+// import tabs from "grapesjs-tabs";
 
 function HomePage() {
 	const [editor, setEditor] = useState(null);
@@ -17,6 +19,7 @@ function HomePage() {
 				gjsBlocksBasic,
 				gjsCountdown,
 				gjsForms,
+				gjsTooltip,
 			],
 			pluginsOpts: {
 				gjsPresetsWebpage: {
@@ -31,6 +34,7 @@ function HomePage() {
 				gjsBlocksBasic: {},
 				gjsCountdown: {},
 				gjsForms: {},
+				gjsTooltip: {},
 			},
 		});
 		setEditor(editor);
