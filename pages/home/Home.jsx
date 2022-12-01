@@ -5,13 +5,19 @@ import grapesjs from "grapesjs";
 import gjsPresetsWebpage from "grapesjs-preset-webpage";
 import gjsBlocksBasic from "grapesjs-blocks-basic";
 import gjsCountdown from "grapesjs-component-countdown";
+import gjsForms from "grapesjs-plugin-forms";
 
 function HomePage() {
 	const [editor, setEditor] = useState(null);
 	useEffect(() => {
 		const editor = grapesjs.init({
 			container: "#editor",
-			plugins: [gjsPresetsWebpage, gjsBlocksBasic, gjsCountdown],
+			plugins: [
+				gjsPresetsWebpage,
+				gjsBlocksBasic,
+				gjsCountdown,
+				gjsForms,
+			],
 			pluginsOpts: {
 				gjsPresetsWebpage: {
 					modalImportTitle: "Import Template",
@@ -23,9 +29,8 @@ function HomePage() {
 					},
 				},
 				gjsBlocksBasic: {},
-				gjsCountdown: {
-
-				},
+				gjsCountdown: {},
+				gjsForms: {},
 			},
 		});
 		setEditor(editor);
