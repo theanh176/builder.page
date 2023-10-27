@@ -3,6 +3,7 @@ import Seo from "../components/common/seo";
 import HomePage from "./home/Home";
 
 import "grapesjs/dist/css/grapes.min.css";
+import HomePage2 from "./home/HomePage2";
 
 export default function Home() {
 	return (
@@ -17,6 +18,7 @@ export default function Home() {
 						"https://cdn.getshifter.co/caa65008efb706a8bfc6f7e4045d6a018420c3df/uploads/2020/11/nextjs.png",
 				}}
 			/>
+			{/* <HomePage2 /> */}
 			<HomePage />
 		</React.Fragment>
 	);
