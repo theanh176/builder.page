@@ -7,7 +7,7 @@ import gjsBlocksBasic from "grapesjs-blocks-basic";
 import gjsCountdown from "grapesjs-component-countdown";
 import gjsForms from "grapesjs-plugin-forms";
 import gjsTooltip from "grapesjs-tooltip";
-import { ProjectType, getEditorPlugins } from "./plugin";
+import { ProjectType, getEditorPlugins } from "../../utils/plugin";
 // import tabs from "grapesjs-tabs";
 
 function HomePage() {
